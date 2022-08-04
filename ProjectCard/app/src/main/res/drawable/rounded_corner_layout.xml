@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:padding="10dp">
+
+    <solid android:color="#FFFFFF" />
+    <corners
+        android:bottomRightRadius="105dp"
+        android:bottomLeftRadius="45dp"
+        android:topLeftRadius="105dp"
+        android:topRightRadius="45dp" />
+    <!--set border line cho text-->
+    <stroke android:width="3dp" android:color="#f06060" />
+</shape>

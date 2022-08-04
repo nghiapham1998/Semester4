@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Project Card</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">User\'s Smart Card</string>
+    <string name="nav_header_subtitle">Log in to display your username</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_buy_card">Buy Card</string>
+    <string name="menu_social">Social</string>
+    <string name="menu_contactus">Contact Us</string>
+    <string name="menu_order_information">Product information</string>
+    <string name="menu_login">Logout</string>
+    <string name="menu_register">Sign up</string>
+    <!-- Strings related to login -->
+    <string name="login_hint_username">Username</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="login_header">WELCOME TO SMART CARD</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- Sign up an account -->
+    <string name="register_header">CREATE NEW ACCOUNT</string>
+    <!-- Order Card -->
+    <string name="btn_subtract">-</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_order">Order it</string>
+    <!-- Payment -->
+    <string name="txt_card_number">Card number</string>
+    <string name="txt_expiry_date">Expiry Date</string>
+    <string name="txt_cvv">CVV</string>
+    <string name="btn_pay">Pay it</string>
+    <!-- Account Info -->
+    <string name="btn_flip_on">Flip Card: On</string>
+    <string name="btn_flip_off">Flip Card: Off</string>
+    <!--  FRONT CARD  -->
+    <string name="front_header_card">BASIC INFORMATION</string>
+    <string name="txt_Name">Name: N/A</string>
+    <string name="txt_Gender">Gender: N/A</string>
+    <string name="txt_Email">Email: N/A</string>
+    <string name="txt_Phone">Phone number: N/A</string>
+    <string name="txt_Address">Address: N/A</string>
+    <string name="txt_birthday">Birthday: N/A</string>
+    <string name="txt_province">Province: N/A</string>
+    <!--  BEHIND CARD  -->
+    <string name="behind_header_card">ONE TOUCH CONNECT</string>
+    <string name="popup_edit_url">🛠 edit</string>
+    <string name="popup_delete_url">❌ drop</string>
+    <string name="txt_facebook">Facebook: N/A</string>
+    <string name="txt_twitter">Twitter: N/A</string>
+    <string name="txt_instagram">Instagram: N/A</string>
+    <string name="txt_tiktok">Tiktok: N/A</string>
+    <string name="txt_web1">Web: N/A</string>
+    <string name="txt_web2">Web: N/A</string>
+    <string name="txt_company1">Company: N/A</string>
+    <string name="txt_company2">Company: N/A</string>
+    <!--String text for Register and Update Account's Profile layout-->
+    <string name="btn_updateProfile">Update Profile</string>
+    <string name="btn_saveProfile">Save Profile</string>
+    <string name="intro_header_register_text">Here’s\nyour first\nstep with \nus!</string>
+    <string name="intro_header_update_text">Here’s place \nto update\nyour profile</string>
+    <string name="register">Register</string>
+    <string name="have_already_account">Already have an account?</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="fullname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone number</string>
+    <string name="address">Address</string>
+    <string name="description">Description</string>
+    <string name="province">Province</string>
+    <!--String text for Add and Update Link Url layout-->
+    <string name="btn_add_URL">Add New URL</string>
+    <string name="btn_update_URL">Update URL</string>
+    <string name="sp_url_type">URL TYPE</string>
+    <string name="intro_header_social_web_text">Here’s place \nto you connect \nwith everyone</string>
+    <string name="intro_header_contact_us">We’ll listen \nto your opinion \nfrom here</string>
+    <string name="txt_url_name">URL NAME</string>
+    <string name="txt_url_link">URL LINK</string>
+    <string name="ed_hint_url_name">Set name for your URL</string>
+    <string name="ed_hint_url_link">example.com</string>
+    <!--CONTACT US-->
+    <string name="btn_send_mail">Send</string>
+    <string name="txt_to_mail">To:</string>
+    <string name="txt_content_mail">Content</string>
+    <string name="non_ed_mail_to">One Touch Team</string>
+    <string name="ed_title_mail">Title</string>
+    <string name="ed_content_mail">Write your opinion at here........</string>
+    <!--ABOUT US-->
+    <string name="txt_aboutUs">About Us</string>
+    <!--STATUS CARD-->
+    <string name="txt_status_card_header">CARD\'S STATUS</string>
+    <string name="txt_card_status">Status:\u0020</string>
+    <string name="txt_date_created">Buy at:\u0020</string>
+    <string name="txt_buyer">Buyer:\u0020</string>
+    <string name="txt_date_active">Activated at:\u0020</string>
+    <string name="txt_duration">Duration:\u0020</string>
+    <string name="txt_countDown">Days left:\u0020</string>
+    <string name="txt_date_expired">Expired at:\u0020</string>
+    <string name="txt_extend_card">Extend Card</string>
+    <!--Order history-->
+    <string name="txt_order_history_header">ORDER HISTORY INFORMATION</string>
+    <string name="txt_header_code">Code</string>
+    <string name="txt_header_category">Category</string>
+    <string name="txt_header_price">Price</string>
+    <string name="txt_header_order_at">Order at</string>
+    <string name="txt_header_order_status">Status</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

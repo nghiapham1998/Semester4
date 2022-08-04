@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/lightBlueBackground"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:id="@+id/frmProfile"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/intro_header_update_text"
+                    android:textColor="@color/whiteTextColor" />
+
+                <ImageView
+                    android:id="@+id/imgAvatarProfile"
+                    android:background="@drawable/img8"
+                    android:layout_width="470px"
+                    android:layout_height="470px"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/textInputFullnameProfile"
+                        style="@style/parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/viewParent"
+                            android:text="@string/fullname"/>
+
+                        <EditText
+                            android:id="@+id/editFullnameProfile"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/fullname"
+                            android:inputType="textPersonName"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/textInputEmailProfile"
+                        style="@style/parent"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/viewParent"
+                            android:text="@string/email"/>
+
+                        <EditText
+                            android:id="@+id/editEmailProfile"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/textInputMobileProfile"
+                        style="@style/parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/viewParent"
+                            android:text="@string/phone_number"/>
+
+                        <EditText
+                            android:id="@+id/editPhoneProfile"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/phone_number"
+                            android:inputType="phone"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/textInputBirthdayProfile"
+                        style="@style/parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/viewParent"
+                            android:text="@string/birthday"/>
+
+                        <TextView
+                            android:id="@+id/txtEdBirthProfile"
+                            style="@style/modifiedEditText"
+                            android:hint="Birthday"
+                            android:inputType="date"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/textInputGenderProfile"
+                        style="@style/parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/viewParent"
+                            android:text="@string/gender"/>
+
+                        <RadioGroup
+                            android:id="@+id/rgGenderProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rdMaleProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="Male" />
+
+                            <RadioButton
+                                android:id="@+id/rdFemaleProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:text="Female" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/textInputAddressProfile"
+                        style="@style/parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/viewParent"
+                            android:text="@string/address"/>
+
+                        <EditText
+                            android:id="@+id/editAddressProfile"
+                            style="@style/modifiedEditText"
+                            android:hint="Address"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/textInputDescriptionProfile"
+                        style="@style/parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/viewParent"
+                            android:text="@string/description"/>
+
+                        <EditText
+                            android:id="@+id/editDescriptionProfile"
+                            style="@style/modifiedEditText"
+                            android:hint="Description"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnUpdate"
+                        style="@style/updateButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:layout_marginBottom="@dimen/loginViewsMargin"
+                        android:text="@string/btn_saveProfile" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="false"
+        android:id="@+id/backHomeClick"
+        android:src="@drawable/ic_back_img" />
+
+</RelativeLayout>

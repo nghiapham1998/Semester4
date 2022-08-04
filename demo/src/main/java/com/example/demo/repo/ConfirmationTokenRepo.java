@@ -1,0 +1,27 @@
+package com.example.demo.repo;
+
+import com.example.demo.domain.ConfirmationToken;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.time.LocalDateTime;
+import java.util.Optional;
+
+public interface ConfirmationTokenRepo extends CrudRepository<ConfirmationToken,Long> {
+
+
+    Optional<ConfirmationToken> findByToken(String Token);
+
+    @Transactional
+    @Modifying
+    @Query("UPDATE ConfirmationToken c " +
+            "SET c.confirmedAt = ?2 " +
+            "WHERE c.token = ?1")
+    int updateConfirmedAt(String token,
+                          LocalDateTime confirmedAt);
+
+    void deleteAllByTokenEquals(String token);
+    void deleteByToken(String token);
+}
